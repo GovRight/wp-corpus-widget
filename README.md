@@ -1,1 +1,1 @@
-# wp-corpus-widget
+# wp-corpus-widgets
