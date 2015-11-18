@@ -1,11 +1,12 @@
 <?php
 /*
-Plugin Name: GovRight Corpus Tools
-Plugin URI: http://govright.org
-Description: 
-Version: 0.1
-Author: Heath Morrison
-Author URI: http://www.govright.org
+Plugin Name: GovRight Corpus Widgets
+Plugin URI: https://github.com/GovRight/wp-corpus-widgets
+Description:
+Version: 1.0.0
+Author: GovRight
+Author URI: http://govright.org/
+License: MIT
 */
 
 // Disable bullshit from Wordpress.
@@ -15,7 +16,3 @@ require(__DIR__ . '/includes/settings.php');
 require(__DIR__ . '/includes/shortcodes.php');
 require(__DIR__ . '/includes/scripts.php');
 require(__DIR__ . '/includes/actions.php');
-
-
-
-
