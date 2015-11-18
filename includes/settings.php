@@ -4,9 +4,8 @@ add_action( 'admin_menu', 'wpcw_add_admin_menu' );
 add_action( 'admin_init', 'wpcw_settings_init' );
 
 function wpcw_add_admin_menu(  ) {
-
-    add_menu_page( 'WP Corpus Widgets', 'WP Corpus Widgets', 'manage_options', 'wp_corpus_widgets', 'wp_corpus_widgets_options_page' );
-
+    require_once(__DIR__ . '/govright.php');
+    add_submenu_page('govright_options', 'Corpus Widgets', 'Corpus Widgets', 'manage_options', 'wpcw_settings_page', 'wp_corpus_widgets_options_page');
 }
 
 
@@ -122,7 +121,7 @@ function wp_corpus_widgets_options_page(  ) {
     ?>
     <form action='options.php' method='post'>
 
-        <h2>WP Corpus Widgets</h2>
+        <h2>GovRight Corpus Widgets</h2>
 
         <?php
         settings_fields( 'wpcw_settings_page' );
