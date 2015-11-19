@@ -5,7 +5,7 @@ add_action( 'admin_init', 'wpcw_settings_init' );
 
 function wpcw_add_admin_menu(  ) {
     require_once(__DIR__ . '/govright.php');
-    add_submenu_page('govright_options', 'Corpus Widgets', 'Corpus Widgets', 'manage_options', 'wpcw_settings_page', 'wp_corpus_widgets_options_page');
+    add_submenu_page('govright_options', 'Corpus Widgets', 'Corpus Widgets', 'manage_options', 'wpcw_options', 'wp_corpus_widgets_options_page');
 }
 
 
