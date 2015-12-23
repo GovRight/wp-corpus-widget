@@ -1,0 +1,11 @@
+.widget-controls {
+    margin-top: 5px;
+}
+.widget-controls label {
+    position: relative;
+    top: 5px;
+    margin-left: 10px;
+}
+code  {
+    font-size: 12px;
+}
