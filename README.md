@@ -4,10 +4,10 @@ A plugin to help you to embed GovRight Corpus widgets such as list of discussion
 
 ##Quick start
 
-0. Install and activate the plugin
-1. Go to "GovRight" > "Corpus Widgets" in the admin
-2. Create your own or use default templates for layout and styles
-3. Insert the shortcode where you want to see the app
+1. Download `GovRight Corpus Widgets`.
+2. Upload the 'wp-corpus-widgets' directory to your '/wp-content/plugins/' directory, using your favorite method (ftp, sftp, scp, etc...)
+3. Activate plugin from your Plugins page.
+4. Go to "GovRight" > "Corpus Widgets" in the admin and check plugin page.
 
 ## Available shortcodes
 * `[corpus-discussion]` - widget provides information about discussion(law): title, description, statistics
@@ -41,3 +41,16 @@ A plugin to help you to embed GovRight Corpus widgets such as list of discussion
   * `[corpus-recent-comments slug="test-law-slug:default"]`
   * `[corpus-articles slug="test-law-slug:default" sort="top-voted"]`
   * `[corpus-articles slug="test-law-slug:default" sort="votesDown DESC" limit="3"]`
+
+## Customization
+It is possible for you to customize the look and feel of the widgets by customizing their HTML and CSS. You can do this via the Wordpress Admin panel under the menu section titled *"GovRight" > "Corpus Widgets"* where is listed available variables and displayed default templates for HTML  nd CSS.
+
+## Contributors
+
+- <a href="https://github.com/ScarletSnail" target="_blank">Anzhela Petrovska</a>
+- <a href="https://github.com/miletsky" target = "_blank">Victor Miletsky</a>
+- <a href="https://github.com/doublemarked" target="_blank">Heath Morrison</a>
+
+## License
+
+wp-corpus-widgets uses the MIT license. See [LICENSE](https://github.com/GovRight/wp-corpus-widgets/blob/master/LICENSE) for more details. 
