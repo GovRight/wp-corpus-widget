@@ -11,6 +11,7 @@ A plugin to help you to embed GovRight Corpus widgets such as list of discussion
 
 ## Available shortcodes
 * `[corpus-discussion]` - widget provides information about discussion(law): title, description, statistics
+* `[corpus-discussions]` - widget shows all discussions(laws) that belongs to specific user
 * `[corpus-recent-comments]` - widget provides info about recent discussion(law) comments: discussion title, comment author, comment date, truncated comment text
 * `[corpus-articles]` - widget provides info about sorted by certain criteria articles.
 
@@ -30,9 +31,13 @@ A plugin to help you to embed GovRight Corpus widgets such as list of discussion
 
 2.`limit` - optional parameter, defines limit of displayed articles. Default value `limit="10"`
 
+### Specific `[corpus-discussions]` attributes
+`user` - obligatoy parameter, defines user id
+
 ## Examples
   * `[corpus-discussion slug="test-law-slug:default"]`
   * `[corpus-discussion locale="fr" slug="test-law-slug:default"]`
+  * `[corpus-discussions locale="en" user="555a5028495918dc4500f77e"]`
   * `[corpus-recent-comments slug="test-law-slug:default"]`
   * `[corpus-articles slug="test-law-slug:default" sort="top-voted"]`
   * `[corpus-articles slug="test-law-slug:default" sort="votesDown DESC" limit="3"]`
