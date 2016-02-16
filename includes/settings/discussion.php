@@ -67,7 +67,7 @@ add_settings_field (
 function wpcw_field_discussion_tpl_render() {
     $wpcw_defaults = wpcw_get_defaults('discussion');
     ?>
-    <textarea rows='18' name='wpcw_discussion_tpl' style="width: 95%;"><?php echo get_option( 'wpcw_discussion_tpl' ) ?: $wpcw_defaults['tpl'] ?></textarea>
+    <textarea rows='25' name='wpcw_discussion_tpl' style="width: 95%;"><?php echo get_option( 'wpcw_discussion_tpl' ) ?: $wpcw_defaults['tpl'] ?></textarea>
     <div class="widget-controls">
         <button class="button button-reset" data-section="discussion" data-item="tpl">Reset template</button>
         <label for="wpcw_discussion_use_default_tpl">

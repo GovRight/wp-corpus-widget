@@ -60,7 +60,7 @@ add_settings_field (
 function wpcw_field_articles_tpl_render() {
     $wpcw_defaults = wpcw_get_defaults('articles');
     ?>
-    <textarea rows='22' name='wpcw_articles_tpl' style="width: 95%;"><?php echo get_option( 'wpcw_articles_tpl' ) ?: $wpcw_defaults['tpl'] ?></textarea>
+    <textarea rows='25' name='wpcw_articles_tpl' style="width: 95%;"><?php echo get_option( 'wpcw_articles_tpl' ) ?: $wpcw_defaults['tpl'] ?></textarea>
     <div class="widget-controls">
         <button class="button button-reset" data-section="articles" data-item="tpl">Reset template</button>
         <label for="wpcw_articles_use_default_tpl">
