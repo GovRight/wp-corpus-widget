@@ -9,7 +9,7 @@ function wpcw_add_customized_options() {
     }
 
     if(get_option( 'wpcw_articles_use_default_css', 'on' ) !== 'on') {
-        echo '<style id="corpus-custom-widget-styles">';
+        echo '<style id="corpus-custom-widget-styles-articles">';
         echo get_option('wpcw_articles_css');
         echo '</style>';
     }
@@ -21,19 +21,19 @@ function wpcw_add_customized_options() {
     }
 
     if(get_option( 'wpcw_discussion_use_default_css', 'on' ) !== 'on') {
-        echo '<style id="corpus-custom-widget-styles">';
+        echo '<style id="corpus-custom-widget-styles-discussion">';
         echo get_option('wpcw_discussion_css');
         echo '</style>';
     }
 
     if(get_option( 'wpcw_recent_comments_use_default_tpl', 'on' ) !== 'on') {
-        echo '<script id="corpus-discussion" type="html/template">';
+        echo '<script id="corpus-comments" type="html/template">';
         echo get_option('wpcw_recent_comments_tpl');
         echo '</script>';
     }
 
     if(get_option( 'wpcw_recent_comments_use_default_css', 'on' ) !== 'on') {
-        echo '<style id="corpus-custom-widget-styles">';
+        echo '<style id="corpus-custom-widget-styles-comments">';
         echo get_option('wpcw_recent_comments_css');
         echo '</style>';
     }

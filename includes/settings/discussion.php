@@ -1,8 +1,46 @@
 <?php
 
 function wpcw_settings_section_callback() { ?>
-    Available variables: <br><br>
-    <code>{{discussion}}</code> - discussion ...
+    <p>
+        <b>Available variables: </b>
+    </p>
+    <p>
+        <code>{{discussion}}</code> - discussion object
+    </p>
+    <p>
+        <code>{{= locale}}</code> - current locale code
+    </p>
+    <p>
+        <code>{{= discussion.lawSlug}}</code> - parent law slug
+    </p>
+
+    <p>
+        <code>{{= discussion.slug}}</code> - discussion slug
+    </p>
+   <p>
+       <code>{{= discussion.title}}</code> - discussion title in current locale
+   </p>
+    <p>
+        <code>{{= GovRight.truncateString(discussion.overview)}}</code> - short description of discussion.
+    The <code>GovRight.truncateString(text, length)</code> function truncates the description to
+    200 characters by default, but you can specify any number of chars:
+    <code>{{= GovRight.truncateString(article.text, 20)}}</code>
+    </p>
+    <p>
+        <code>{{= discussion.stats.votesUp}}</code> - number of up votes
+    </p>
+    <p>
+        <code>{{= discussion.stats.votesDown}}</code> - number of down votes
+    </p>
+    <p>
+        <code>{{= discussion.stats.comments}}</code> - number of comments
+    </p>
+    <p>
+        <code>{{= discussion.stats.versions}}</code> - number of versions
+    </p>
+    <p>
+        <code>{{= discussion.stats.comparisons}}</code> - number of comprasions
+    </p>
 <?php }
 
 register_setting('wpcw_settings_page', 'wpcw_discussion_tpl');
@@ -29,7 +67,7 @@ add_settings_field (
 function wpcw_field_discussion_tpl_render() {
     $wpcw_defaults = wpcw_get_defaults('discussion');
     ?>
-    <textarea rows='25' name='wpcw_discussion_tpl' style="width: 95%;"><?php echo get_option( 'wpcw_discussion_tpl' ) ?: $wpcw_defaults['tpl'] ?></textarea>
+    <textarea rows='18' name='wpcw_discussion_tpl' style="width: 95%;"><?php echo get_option( 'wpcw_discussion_tpl' ) ?: $wpcw_defaults['tpl'] ?></textarea>
     <div class="widget-controls">
         <button class="button button-reset" data-section="discussion" data-item="tpl">Reset template</button>
         <label for="wpcw_discussion_use_default_tpl">

@@ -1,8 +1,45 @@
 <?php
 
 function wpcw_settings_section_callback() { ?>
-    Available variables: <br><br>
-    <code>{{comments}}</code> - test ...
+   <p>
+       <b>Available variables: </b>
+   </p>
+    <p>
+        <code>{{comments}}</code> - recent comments object
+    </p>
+    <p>
+        <code>{{= locale}}</code> - current locale code
+    </p>
+    <p>
+        <code>{{= discussion.lawSlug}}</code> - parent law slug
+    </p>
+
+    <p>
+        <code>{{= discussion.slug}}</code> - discussion slug
+    </p>
+    <p>
+        <code>{{= discussion.title}}</code> - discussion title in current locale
+    </p>
+    <p>
+        <code>{{= comment.user.profile.id}}</code> - id number of comment author
+    </p>
+    <p>
+        <code>{{= comment.user.profile.displayName}}</code> - profile name of comment author
+    </p>
+    <p>
+        <code>{{= GovRight.formatDate(comment.created, "yyyy-MM-dd HH:mm")}}</code> - date of creation.
+        The <code>GovRight.formatDate(date, format)</code> function formats date, you can specify date of needed format:
+        <code>{{= GovRight.formatDate(comment.created, "yyyy-MM HH:mm:ss")}}</code>
+    </p>
+    <p>
+        <code>{{= comment.versionId}}</code> - id of discussion version
+    </p>
+    <p>
+        <code>{{= GovRight.truncateString(comment.text)}}</code> - text of comment.
+        The <code>GovRight.truncateString(text, length)</code> function truncates the text of comment to
+        200 characters by default, but you can specify any number of chars:
+        <code>{{= GovRight.truncateString(comment.text, 150)}}</code>
+    </p>
 <?php }
 
 register_setting('wpcw_settings_page', 'wpcw_recent_comments_tpl');
