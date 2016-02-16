@@ -7,7 +7,7 @@ A plugin to help you to embed GovRight Corpus widgets such as list of discussion
 1. Download `GovRight Corpus Widgets`.
 2. Upload the `'wp-corpus-widgets'` directory to your `'/wp-content/plugins/'` directory, using your favorite method (ftp, sftp, scp, etc...)
 3. Activate plugin from your Plugins page.
-4. Go to `"GovRight" > "Corpus Widgets"` in the admin and check plugin page.
+4. Go to `"GovRight" > "Corpus Widgets"` in the wordpress admin panel and check plugin page.
 5. Insert the shortcode where you want to see the app.
 
 ## Available shortcodes
