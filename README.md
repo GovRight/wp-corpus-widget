@@ -44,7 +44,7 @@ A plugin to help you to embed GovRight Corpus widgets such as list of discussion
   * `[corpus-articles slug="test-law-slug:default" sort="votesDown DESC" limit="3"]`
 
 ## Customization
-It is possible for you to customize the look and feel of the widgets by customizing their HTML and CSS. You can do this via the Wordpress Admin panel under the menu section titled `*"GovRight" > "Corpus Widgets"*` where is listed available variables and displayed default templates for HTML  nd CSS.
+It is possible for you to customize the look and feel of the widgets by customizing their HTML and CSS. You can do this via the Wordpress Admin panel under the menu section titled `"GovRight" > "Corpus Widgets"` where is listed available variables and displayed default templates for HTML  nd CSS.
 
 ## Contributors
 
