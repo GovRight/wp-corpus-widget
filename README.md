@@ -2,7 +2,7 @@
 
 A plugin to help you to embed GovRight Corpus widgets such as list of discussions, articles, comments, etc, into your site.
 
-##Quick start
+## Quick start
 
 1. Download `GovRight Corpus Widgets`.
 2. Upload the `'wp-corpus-widgets'` directory to your `'/wp-content/plugins/'` directory, using your favorite method (ftp, sftp, scp, etc...)
